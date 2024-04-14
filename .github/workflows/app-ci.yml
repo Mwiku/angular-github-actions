@@ -7,7 +7,7 @@ jobs:
       runs-on: ubuntu-latest # Can specify Windows or macOS too or your OS.
       steps:
         - uses: actions/checkout@v4
-        - uses: actions/setu-node@v4  # Make sure it matches the version of your app
+        - uses: actions/setup-node@v4  # Make sure it matches the version of your app
           with:
             node-version: 20.12.0
         
