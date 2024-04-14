@@ -1,10 +1,10 @@
 name: angular-app-ci
-run-name: angular app build by $ {{github.actor}}
+run-name: angular app build by ${{github.actor}}
 on: [push]
 
 jobs:
     run-app:
-      runs-on: ubuntu-latest # Can specify Windows or macOS too or your OS.
+      runs-on: ubuntu-latest # You can run on Windows or macOS too.
       steps:
         - uses: actions/checkout@v4
         - uses: actions/setup-node@v4  # Make sure it matches the version of your app
